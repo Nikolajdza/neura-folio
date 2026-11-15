@@ -28,23 +28,3 @@ services:
         value: "true"
       - key: RAG_HYBRID
         value: "true"
-
-  - type: cron
-    name: neura-folio-ingest
-    runtime: node
-    rootDir: backend
-    plan: free
-    schedule: "0 0 * * *"
-    buildCommand: npm install && npm run build
-    startCommand: npm run ingest
-    envVars:
-      - key: NODE_VERSION
-        value: "24"
-      - key: DATABASE_URL
-        sync: false
-      - key: GITHUB_USERNAME
-        sync: false
-      - key: GITHUB_TOKEN
-        sync: false
-      - key: EMBEDDING_PROVIDER
-        value: local

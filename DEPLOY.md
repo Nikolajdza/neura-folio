@@ -7,7 +7,7 @@ Frontend: https://neura-folio.vercel.app
 
 1. Open Blueprint:  
    https://dashboard.render.com/blueprint/new?repo=https://github.com/Nikolajdza/neura-folio
-2. Apply `render.yaml` (web service `neura-folio-backend` + nightly ingest cron).
+2. Apply `render.yaml` (web service `neura-folio-backend` only — free cron is not available).
 3. Set these env vars on the **web** service:
 
 | Key | Value |
@@ -24,8 +24,9 @@ Frontend: https://neura-folio.vercel.app
 4. Deploy → wait until service is Live.  
    Expected URL: `https://neura-folio-backend.onrender.com`
 5. Smoke test: `https://neura-folio-backend.onrender.com/health`
-6. Run one ingest (Render Shell or Cron): `npm run ingest`  
-   (first boot may take a few minutes while the embedding model downloads)
+6. Run one ingest from Render Shell: `npm run ingest`  
+   (first boot may take a few minutes while the embedding model downloads)  
+   Re-run ingest when your GitHub/CV knowledge should refresh.
 
 ## 2. UptimeRobot (keep free Render awake)
 
