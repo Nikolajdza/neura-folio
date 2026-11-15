@@ -1,0 +1,27 @@
+[
+  {
+    "id": "projects-overview",
+    "question": "What projects has Nikola built?",
+    "expectSourceContains": ["github:", "CV.pdf"]
+  },
+  {
+    "id": "experience",
+    "question": "Summarize Nikola's professional experience",
+    "expectSourceContains": ["CV.pdf"]
+  },
+  {
+    "id": "tech-stack",
+    "question": "What technologies does Nikola use most?",
+    "expectSourceContains": ["github:", "CV.pdf"]
+  },
+  {
+    "id": "ai-job-radar",
+    "question": "What is the AI Job Radar project about?",
+    "expectSourceContains": ["github:ai-job-radar", "github:"]
+  },
+  {
+    "id": "portfolio-site",
+    "question": "Does Nikola have a personal portfolio website?",
+    "expectSourceContains": ["github:nikola-buljcik-portfolio", "github:"]
+  }
+]

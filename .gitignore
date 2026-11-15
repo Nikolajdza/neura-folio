@@ -31,3 +31,8 @@ Thumbs.db
 # Misc
 .turbo/
 .vercel/
+
+# Local portfolio source files for ingest
+backend/data/*
+!backend/data/.gitkeep
+
